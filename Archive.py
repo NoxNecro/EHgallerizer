@@ -3,7 +3,7 @@ import zipfile
 
 def get_image_files(folder_path):
     # List all files in the folder and filter for images
-    image_extensions = ('.jpg', '.jpeg', '.png', '.gif')
+    image_extensions = ('.jpg', '.jpeg', '.png', '.gif', '.webp')
     image_files = [f for f in os.listdir(folder_path) if f.lower().endswith(image_extensions)]
     return image_files
 
